@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Progress } from '@/components/ui/progress';
+import Footer from '@/components/Footer';
 
 const Profile = () => {
   const userStats = {
@@ -235,9 +236,11 @@ const Profile = () => {
                             {achievement.name}
                           </div>
                           <div className="text-sm text-muted-foreground">{achievement.description}</div>
-                        </div>
-                      </div>
-                    </div>
+        </div>
+      </div>
+      
+      <Footer />
+    </div>
                   ))}
                 </div>
               </CardContent>

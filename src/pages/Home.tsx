@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import HotelCard from '@/components/HotelCard';
+import Footer from '@/components/Footer';
 
 const Home = () => {
   const [viewMode, setViewMode] = useState<'grid' | 'map'>('grid');
@@ -99,7 +100,7 @@ const Home = () => {
         {/* Hero Section */}
         <div className="text-center mb-12 animate-fade-in">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
-            Секретный гость
+            Секретный островок
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Находите лучшие отели через анализ скрытых проверок и независимых оценок
@@ -202,6 +203,8 @@ const Home = () => {
           </Card>
         )}
       </div>
+      
+      <Footer />
     </div>
   );
 };

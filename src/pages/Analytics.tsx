@@ -3,6 +3,7 @@ import { TrendingUp, TrendingDown, Target, Award, MapPin, Calendar } from 'lucid
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import Footer from '@/components/Footer';
 
 const Analytics = () => {
   const analyticsData = {
@@ -183,6 +184,8 @@ const Analytics = () => {
           </CardContent>
         </Card>
       </div>
+      
+      <Footer />
     </div>
   );
 };

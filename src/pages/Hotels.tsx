@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import HotelCard from '@/components/HotelCard';
+import Footer from '@/components/Footer';
 
 const Hotels = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -260,6 +261,8 @@ const Hotels = () => {
           </Card>
         )}
       </div>
+      
+      <Footer />
     </div>
   );
 };

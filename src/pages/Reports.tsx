@@ -7,6 +7,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import Footer from '@/components/Footer';
 
 const Reports = () => {
   const [isReportModalOpen, setIsReportModalOpen] = useState(false);
@@ -322,9 +323,11 @@ const Reports = () => {
                       <div className="font-medium">{report.hotel}</div>
                       <div className="text-sm text-muted-foreground">
                         {report.date} • {report.reporter}
-                      </div>
-                    </div>
-                  </div>
+        </div>
+      </div>
+      
+      <Footer />
+    </div>
                   <div className="flex items-center space-x-4">
                     <div className="text-right">
                       <div className="font-bold">{report.rating}</div>
